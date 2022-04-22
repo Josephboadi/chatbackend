@@ -60,7 +60,7 @@ app.use("/api/v1/msg/", msgRoute);
 const { Server } = require("socket.io");
 const io = new Server(app, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: "https://joychatapp.netlify.app",
     methods: "GET, POST, OPTIONS, PUT, PATCH, DELETE",
     credentials: true,
   },
